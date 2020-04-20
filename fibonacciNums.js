@@ -1,5 +1,5 @@
 const fibonacciNums = (n) => {
-    dynamic = [0, 0, 1]
+    dynamic = [0, 1, 1]
     if (n <= 0) return [];
     else if (n == 1) return [0];
     else if (n == 2) return [0, 0];
