@@ -4,10 +4,12 @@ const fibonacciNums = (n) => {
     else if (n == 1) return [0];
     else if (n == 2) return [0, 0];
     else if (n == 3) return [0, 0, 1];
-    for (i = 4; i < n; i++) {
+    else {
+    for (i = 3; i < n; i++) {
         dynamic.push(dynamic[i - 1] + dynamic[i - 2]);
-    }
+        }
     return dynamic;
+    }
 };
 
 module.exports = fibonacciNums;
