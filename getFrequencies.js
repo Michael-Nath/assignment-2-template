@@ -1,7 +1,7 @@
 const getFrequencies = (arr) => {
     frqs = {};
     for (i = 0; i < arr.length; i++) {
-        if (frqs[arr[i]] == null) frqs[arr[i]] = 0;
+        if (frqs[arr[i]] === undefined) frqs[arr[i]] = 1;
         else frqs[arr[i]]++;
     }
     return frqs;
